@@ -1,0 +1,7 @@
+<div class="mt-3" *ngIf="!stopped"><h3>ChildCounter: {{counter}}</h3>   </div>
+
+<div *ngIf="stopped">
+    <h1>Congratulations!</h1>
+    <h3>You stopped the child component's counter</h3>
+    <h3>ChildCounter: {{counter}}</h3>    
+</div>
