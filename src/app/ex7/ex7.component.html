@@ -1,0 +1,24 @@
+<div class="container bg-dark text-white">
+    <h3>All Of the eventts should shown below</h3>
+    <table>
+        <thead>
+            <tr>
+                <td>Event</td>
+                <td>Date</td>
+                <td>Address</td>
+                <td>City</td>
+                <td>Country</td>
+            </tr>
+        </thead>
+        <tbody *ngFor="let event of events">
+            <tr>
+                <td>{{event.name}}</td>
+                <td>{{event.date}}</td>
+                <td>{{event.location?.address}}</td>
+                <td>{{event.location?.city}}</td>
+                <td>{{event.location?.country}}</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>

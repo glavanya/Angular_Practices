@@ -12,6 +12,8 @@ import { Ex4Component } from './ex4/ex4.component';
 import { Ex4outputComponent } from './ex4output/ex4output.component';
 import { Ex5Component } from './ex5/ex5.component';
 import { Ex6Component } from './ex6/ex6.component';
+import { Ex7Component } from './ex7/ex7.component';
+import { Ex8Component } from './ex8/ex8.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { Ex6Component } from './ex6/ex6.component';
     Ex4Component,
     Ex4outputComponent,
     Ex5Component,
-    Ex6Component
+    Ex6Component,
+    Ex7Component,
+    Ex8Component
   ],
   imports: [
     BrowserModule,
