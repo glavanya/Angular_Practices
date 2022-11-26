@@ -1,0 +1,27 @@
+<!-- <div class="container"> -->
+
+    <!-- Little trick to center the inputs to the viewer -->
+    <!-- <div class="form-container">
+        <form id="input-form" [formGroup]="myForm" novalidate>
+         -->
+            <!-- Cycle through all the inputs -->
+            <!-- <div *ngFor="let input of inputList"> -->
+                
+                <!-- Insert an input accordingly and get the style/position from the component -->
+                <!-- <input type="text"
+                    [name]="input.name"
+                    [formControlName]="input.name" 
+                    [value]="input.value" 
+                    [ngStyle]="getInputPosition(input)">
+                    
+            </div>
+        </form>
+    </div>
+    <pdf-viewer id="viewer" [src]="pdfSrc" (after-load-complete)="loadComplete($event)"></pdf-viewer>
+</div> -->
+
+<div class="app">
+	<!-- We'll mount the PSPDFKit UI to this element. -->
+	<div id="pspdfkit-container" style="width: 100%; height: 100vh"></div>
+</div>
+

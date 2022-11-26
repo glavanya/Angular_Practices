@@ -1,0 +1,22 @@
+<div class="container mt-2 text-center">
+    <button (click)="getData()">GetDetails</button>
+</div>
+
+<table class="table" *ngIf="getdata">
+    <thead>
+        <tr  class="table-dark">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody  *ngFor="let item of details">
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.price}}</td>
+        </tr>
+        
+    </tbody>
+</table>
+

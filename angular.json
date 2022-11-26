@@ -18,16 +18,23 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "allowedCommonJsDependencies":["@grapecity/gcpdfviewer"],
             "assets": [
               "src/favicon.ico",
               "src/assets"
+             
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/cropperjs/dist/cropper.min.css",
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            
+             "node_modules/bootstrap/dist/js/bootstrap.js",
+             "node_modules/bootstrap/dist/js/bootstrap.min.js",
+             "node_modules/cropperjs/dist/cropper.min.js"
             ]
           },
           "configurations": {
@@ -35,8 +42,9 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "8mb",
+                  "maximumError": "10mb"
+                  
                 },
                 {
                   "type": "anyComponentStyle",
@@ -93,9 +101,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dis/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dis/js/bootstrap.min.js"
+            ]
           }
         }
       }

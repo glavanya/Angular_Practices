@@ -1,0 +1,10 @@
+<div class="container mb-2">
+    <h1>Using QueryString Parameters </h1>
+    City: <input type="text" name="city" [(ngModel)]="city" /> <br /><br />
+    </div>
+    <div class="container">
+    
+    <button type="button" class="btn btn-success" (click)="GetWeather()">GetWeather</button>
+    </div>
+<br>
+    Tomorrow Forecast: {{forecast}}
